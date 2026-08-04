@@ -29,7 +29,7 @@ export const me = {
 };
 
 export const work = [
-  { title: 'Scan.com (Product Engineer)', dates: 'November 2022 - May 2026', description: 'lorem ipsum' },
+  { title: 'Scan.com (Product Engineer)', dates: 'November 2022 - May 2026', description: 'Development of the Ruby on Rails applications: scan.com, fullbodyscan.com, portal.scan.com, admin.scan.com.' },
   { title: 'Dexerto (Mid-level Web Developer)', dates: 'January 2021 - November 2022', description: 'Maintaining and improving core web vitals on dexerto.com (PHP), as well as developing mystats.com and the dexerto.com rebuild (Next.js).' },
   { title: 'Eledev Digital (Full-stack Developer)', dates: 'May 2020 - January 2021', description: 'Responsibilities included developing a cross platform e-commerce app, co-developing Hour Blocks: Day Planner (SwiftUI) and developing the PWS 2021 API (Nest.js).' },
   { title: 'Kmatic (Junior Devloper)', dates: 'May 2020 - July 2020', description: 'Adding content to the KMatic app (Xamarin) and developing tools to help process incoming data (C#).' },
