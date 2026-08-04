@@ -1,0 +1,14 @@
+.accented {
+  position: relative;
+
+  &:after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 1.25em;
+    height: 0.15em;
+    border-radius: var(--radius-full);
+    background-color: var(--color-accent-1);
+  }
+}

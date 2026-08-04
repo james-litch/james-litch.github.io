@@ -1,0 +1,31 @@
+/* Sidebar */
+.sidebar-l,
+.sidebar-r {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.sidebar-r > :last-child,
+.sidebar-l > :first-child {
+	/* Designed to be used with flex basis for layouts */
+	flex-grow: 1;
+}
+
+.sidebar-r > :first-child,
+.sidebar-l > :last-child {
+	min-width: var(--min-content-width, 60%);
+	flex-basis: 0;
+	flex-grow: 999;
+}
+
+/* Switcher */
+.switcher {
+	--threshold: calc(100% - (2 * var(--content-gutter, 0)));
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.switcher > * {
+	flex-grow: 1;
+	flex-basis: calc((var(--threshold) - 100%) * 999);
+}

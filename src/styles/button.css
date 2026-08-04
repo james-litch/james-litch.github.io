@@ -1,0 +1,34 @@
+[class|=button] {
+  --button-bg: transparent;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--button-bg);
+  padding: 0.5em 1em;
+  color: var(--button-text);
+
+  border-width: 1px;
+  border-style: solid;
+
+  border-color: var(--button-bg);
+  border-radius: 8px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.1s ease;
+
+  &:hover {
+    --button-bg: var(--color-surface-4);
+  }
+}
+
+.button-primary {
+  color: var(--color-white);
+  --button-bg: var(--color-accent-1);
+
+  &:hover {
+    --button-bg: var(--color-accent-2);
+  }
+}
+
+
