@@ -1,33 +1,31 @@
+import { mdsvex } from 'mdsvex';
 import tailwindcss from '@tailwindcss/vite';
 import adapter from '@sveltejs/adapter-auto';
 import { sveltekit } from '@sveltejs/kit/vite';
 import { defineConfig } from 'vite';
-import svg from '@poppanator/sveltekit-svg'
-
+import svg from '@poppanator/sveltekit-svg';
 
 export default defineConfig({
 	plugins: [
 		tailwindcss(),
 		sveltekit({
-			alias: {
-				$components: './src/components'
-			},
+			alias: { $components: './src/components' },
 			compilerOptions: {
 				// Force runes mode for the project, except for libraries. Can be removed in svelte 6.
-				runes: ({ filename }) =>
-					filename.split(/[/\\]/).includes('node_modules') ? undefined : true
+				runes: ({ filename }) => filename.split(/[/\\]/).includes('node_modules') ? undefined : true
 			},
 
 			// adapter-auto only supports some environments, see https://svelte.dev/docs/kit/adapter-auto for a list.
 			// If your environment is not supported, or you settled on a specific environment, switch out the adapter.
 			// See https://svelte.dev/docs/kit/adapters for more information about adapters.
-			adapter: adapter()
+			adapter: adapter(),
+			preprocess: [mdsvex({ extensions: ['.svx', '.md'] })],
+			extensions: ['.svelte', '.svx', '.md']
 		}),
+
 		svg({
 			includePaths: ['./src/lib/assets/icons/'],
-			svgoOptions: {
-				multipass: true
-			}
+			svgoOptions: { multipass: true }
 		})
 	]
 });

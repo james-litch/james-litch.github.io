@@ -7,6 +7,7 @@
   background-color: var(--button-bg);
   padding: 0.5em 1em;
   color: var(--button-text);
+  gap: 0.5em;
 
   border-width: 1px;
   border-style: solid;
@@ -20,6 +21,10 @@
   &:hover {
     --button-bg: var(--color-surface-4);
   }
+
+  > svg {
+    flex-shrink: 0;
+  }
 }
 
 .button-primary {
@@ -28,6 +33,15 @@
 
   &:hover {
     --button-bg: var(--color-accent-2);
+  }
+}
+
+.button-secondary {
+  color: var(--color-text-primary);
+  --button-bg: var(--color-surface-1);
+
+  &:hover {
+    --button-bg: var(--color-surface-4);
   }
 }
 

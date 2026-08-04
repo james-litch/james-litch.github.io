@@ -12,3 +12,20 @@
     background-color: var(--color-accent-1);
   }
 }
+
+.prose {
+  > * + *  {
+    margin-top: --spacing(3);
+  }
+
+  h2 {
+    font-weight: var(--font-weight-bold);
+    font-size: var(--text-fluid-lg);
+    margin-bottom: --spacing(3);
+  }
+  
+  li {
+    list-style: disc;
+    list-style-position: inside;
+  }
+}
