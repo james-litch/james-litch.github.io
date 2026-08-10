@@ -42,25 +42,25 @@ export const education = [
 ];
 
 export const tools = [
+  { name: 'Ruby on Rails', Icon: IconRails },
+  { name: 'HTML', Icon: IconHTML },
+  { name: 'CSS', Icon: IconCSS },
   { name: 'JavaScript', Icon: IconJavascript },
-  { name: 'PHP', Icon: IconPHP },
+  { name: 'React', Icon: IconReact },
   { name: 'TypeScript', Icon: IconTypescript },
+  { name: 'TailwindCSS', Icon: IconTailwind },
   { name: 'Git', Icon: IconGit },
   { name: 'GitHub', Icon: IconGitHub },
   { name: 'NextJS', Icon: IconNextJS },
-  { name: 'React', Icon: IconReact },
   { name: 'Node', Icon: IconNode },
   { name: 'GraphQL', Icon: IconGraphQL },
   { name: 'Swift', Icon: IconSwift },
-  { name: 'HTML', Icon: IconHTML },
-  { name: 'CSS', Icon: IconCSS },
   { name: 'Python', Icon: IconPython },
   { name: 'Flutter', Icon: IconFlutter },
   { name: 'Dart', Icon: IconDart },
   { name: 'C#', Icon: IconCSharp },
   { name: 'Java', Icon: IconJava },
-  { name: 'TailwindCSS', Icon: IconTailwind },
-  { name: 'Ruby on Rails', Icon: IconRails },
+  { name: 'PHP', Icon: IconPHP },
 
 ]
 

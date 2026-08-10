@@ -43,8 +43,7 @@
       </div>
     </div>
 
-    <!-- eslint-disable-next-line svelte/no-navigation-without-resolve -->
-    <a href="/resume.pdf" class='button-primary w-full gap-1'>
+    <a href="/resume.pdf" class='button-primary w-full gap-1' rel='external' target="_blank">
       <IconDownload />
       Download CV
     </a>
