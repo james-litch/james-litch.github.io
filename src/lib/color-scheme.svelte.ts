@@ -29,3 +29,13 @@ export function readAppliedScheme(): ColorScheme {
 	if (!browser) return 'light';
 	return document.documentElement.classList.contains('dark') ? 'dark' : 'light';
 }
+
+export let colorSchemeState = $state({
+	darkMode: readAppliedScheme() === 'dark',
+	userHasChosen: getStoredPreference() !== null,
+});
+
+export function toggleColorScheme() {
+	colorSchemeState.userHasChosen = true;
+	colorSchemeState.darkMode = !colorSchemeState.darkMode;
+}

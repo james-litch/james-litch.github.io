@@ -27,6 +27,10 @@
   }
 }
 
+.icon-button {
+  padding: 0.5em;
+}
+
 .button-primary {
   color: var(--color-white);
   --button-bg: var(--color-accent-1);
