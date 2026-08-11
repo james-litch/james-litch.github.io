@@ -3,11 +3,14 @@
   import IconArrowLeft from '$lib/assets/icons/arrow-left.svg?component';
   import IconGitHub from '$lib/assets/icons/github.svg?component';
   import IconExternal from '$lib/assets/icons/external.svg?component';
+	import Seo from '$components/seo.svelte';
 
   let { data } = $props();
   let github = $derived(data.metadata.github);
   let url = $derived(data.metadata.url);
 </script>
+
+<Seo title={data.metadata.title} />
 
 <a href={resolve('/projects')} class='flex gap-1 hover:underline items-center text-sm text-text-secondary font-medium mb-3'>
   <IconArrowLeft width="1.5em" height="1.5em"/> Back to projects

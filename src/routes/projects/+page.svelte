@@ -1,8 +1,11 @@
 <script>
 	import { resolve } from "$app/paths";
+	import Seo from "$components/seo.svelte";
 
   let { data } = $props();
 </script>
+
+<Seo title='Projects' />
 
 <h1 class="accented text-fluid-2xl font-bold mb-6">Projects</h1>
 

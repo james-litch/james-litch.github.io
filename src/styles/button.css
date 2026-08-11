@@ -6,7 +6,6 @@
   justify-content: center;
   background-color: var(--button-bg);
   padding: 0.5em 1em;
-  color: var(--button-text);
   gap: 0.5em;
 
   border-width: 1px;
@@ -48,5 +47,3 @@
     --button-bg: var(--color-surface-4);
   }
 }
-
-

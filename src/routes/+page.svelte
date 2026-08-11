@@ -3,6 +3,7 @@
   import IconServer from '$lib/assets/icons/server.svg?component';
   import IconmWebsite from '$lib/assets/icons/website.svg?component';
   import IconmListSearch from '$lib/assets/icons/list-search.svg?component';
+	import Seo from '$components/seo.svelte';
 
   const workTopics = [
     { title: "Mobile Development", Icon: IconDeviceMobile, description: "Professional development of native and cross-platform applications." },
@@ -11,6 +12,8 @@
     { title: "SEO Optimisation", Icon: IconmListSearch, description: "Improving search engine optimisation, to make content easier to find." },
   ]
 </script>
+
+<Seo title='About me' />
 
 <h1 class='accented text-fluid-2xl font-bold'>About me</h1>
 

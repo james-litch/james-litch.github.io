@@ -14,7 +14,7 @@
 
   --color-text-primary: #5f7080;
   --color-text-secondary: #718096;
-  --color-text-tertiary: #8697a8;
+  --color-text-tertiary: #64666c;
 
 
   /* @link https://utopia.fyi/type/calculator?c=360,16,1.125,1240,17,1.2,6,2,&s=0.75|0.5|0.25,1.5|2|3|4|6,s-l&g=s,l,xl,12 */
@@ -44,7 +44,7 @@
   .dark {
     color-scheme: dark;
 
-    --color-accent-1: #0d86ff;
+    --color-accent-1: #0e76de;
     --color-accent-2: #304bfc;
 
     --color-surface-1: #262433;
@@ -57,6 +57,6 @@
 
     --color-text-primary: #dedde0;
     --color-text-secondary: #e2e8f0;
-    --color-text-tertiary: #85838E;
+    --color-text-tertiary: #9f9da9;
   }
 }

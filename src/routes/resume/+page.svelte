@@ -1,9 +1,12 @@
 <script>
+	import Seo from '$components/seo.svelte';
   import IconBriefcase from '$lib/assets/icons/briefcase.svg?component';
   import IconSchool from '$lib/assets/icons/school.svg?component';
 
   import { education, tools, work } from '$lib/data/me';
 </script>
+
+<Seo title='Resume' />
 
 <h1 class='accented text-fluid-2xl font-bold mb-6'>Resume</h1>
 
