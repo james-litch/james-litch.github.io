@@ -14,7 +14,7 @@
 </script>
 
 <div bind:this={popover} id='mobile-menu' class='h-full w-full bg-surface-1 px-8 mx-auto py-4' popover>
-  <div class='flex items-center justify-between mb-10'>
+  <div class='flex items-center justify-between mb-20'>
     <button class='button-secondary icon-button rounded-full' type='button' onclick={toggleColorScheme}>
       {#if colorSchemeState.darkMode}
         <IconSun width='1.5em' height='1.5em'/>
@@ -35,7 +35,7 @@
     {#each pages as { name, path } (name)}
       {@const selected = page.url.pathname === path}
       <li>
-        <a class='button-secodary w-full text-fluid-lg {selected && 'text-accent-1'}' onclick={handleLinkClick} aria-current={selected} href={path}>{name}</a>
+        <a class='button-secodary w-full text-fluid-xl {selected && 'text-accent-1'}' onclick={handleLinkClick} aria-current={selected} href={path}>{name}</a>
       </li>
     {/each}
   </menu>
