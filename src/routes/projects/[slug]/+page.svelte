@@ -4,6 +4,8 @@
   import IconGitHub from '$lib/assets/icons/github.svg?component';
   import IconExternal from '$lib/assets/icons/external.svg?component';
 	import Seo from '$components/seo.svelte';
+	import ProjectJsonLd from '$components/project-jsonld.svelte';
+	import { page } from '$app/state';
 
   let { data } = $props();
   let github = $derived(data.metadata.github);
@@ -11,6 +13,7 @@
 </script>
 
 <Seo title={data.metadata.title} />
+<ProjectJsonLd {...data.metadata} slug={page.params.slug || ''} />
 
 <a href={resolve('/projects')} class='flex gap-1 hover:underline items-center text-sm text-text-secondary font-medium mb-3'>
   <IconArrowLeft width="1.5em" height="1.5em"/> Back to projects

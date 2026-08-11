@@ -20,7 +20,9 @@ import IconTailwind from '$lib/assets/icons/tailwind.svg?component';
 
 export const me = {
   name: 'James Litchfield',
+  role: 'Product Engineer',
   phone: '+447850450030',
+  website: 'litchfield.dev',
   email: 'contact@litchfield.dev',
   linkedin: 'https://www.linkedin.com/in/james-litchfield-34b875154/',
   github: 'https://www.github.com/james-litch',

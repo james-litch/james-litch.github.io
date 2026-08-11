@@ -1,5 +1,6 @@
 <script>
-	import Seo from '$components/seo.svelte';
+	import PersonJsonLd from '$components/person-jsonld.svelte';
+  import Seo from '$components/seo.svelte';
   import IconBriefcase from '$lib/assets/icons/briefcase.svg?component';
   import IconSchool from '$lib/assets/icons/school.svg?component';
   import IconTool from '$lib/assets/icons/tool.svg?component';
@@ -8,6 +9,7 @@
 </script>
 
 <Seo title='About me' />
+<PersonJsonLd />
 
 <h1 class='accented text-fluid-2xl font-bold mb-6'>About me</h1>
 
