@@ -1,10 +1,13 @@
 <script>
+	import { me } from "$lib/data/me";
+  import emoji from '$lib/assets/images/memoji.webp';
+
   let {
-    suffix = 'James Litchfield',
+    suffix = me.name,
     title = '',
     description= 'Product engineer James Litchfield builds performant web and mobile products — from healthcare marketplaces to native iOS apps.',
-    url = 'https://litchfield.dev',
-    image = 'https://litchfield.dev/og-default.png',
+    url = me.website,
+    image = emoji,
     type = 'website'
   } = $props();
 
@@ -21,6 +24,7 @@
   <meta property="og:title" content={fullTitle} />
   <meta property="og:description" content={description} />
   <meta property="og:url" content={url} />
+  <meta property="og:site_name" content={url} />
   <meta property="og:image" content={image} />
 
   <!-- Twitter -->
