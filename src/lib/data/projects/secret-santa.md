@@ -1,6 +1,6 @@
 ---
 title: Secret Santa
-date: 2019-05
+date: 2026-10
 description: A private gift exchange app for friends and family, with shared rooms and fair random assignments, built with Next.js and Redis.
 published: true
 url: https://secret-santa-pink-psi.vercel.app
